@@ -1,0 +1,462 @@
+CTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.Eris Cluster Creation &mdash; erisdocument 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="erisdocument 1.1 documentation" href="#"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> erisdocument
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">1.Eris Cluster Creation</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#sequential-execution-steps">Sequential Execution Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contract-deployment">2.Contract Deployment</a></li>
+<li><a class="reference internal" href="#references">3.References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">erisdocument</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>1.Eris Cluster Creation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="eris-cluster-creation">
+<h1>1.Eris Cluster Creation<a class="headerlink" href="#eris-cluster-creation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>1.1.Hardware:</dt>
+<dd><ul class="first last simple">
+<li>One AWS instance for root node</li>
+<li>Two AWS instances for validator nodes</li>
+</ul>
+</dd>
+<dt>1.2.Host OS:</dt>
+<dd><ul class="first last simple">
+<li>UBUNTU 14.04</li>
+</ul>
+</dd>
+<dt>1.3.Software:</dt>
+<dd><ul class="first last simple">
+<li>Docker version:   17.03.0-ce</li>
+<li>Docker Machine version: 0.10.0</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="sequential-execution-steps">
+<h2>Sequential Execution Steps<a class="headerlink" href="#sequential-execution-steps" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>1.1.Install Docker</dt>
+<dd><dl class="first last docutils">
+<dt>Use the following command:-</dt>
+<dd><blockquote class="first">
+<div><a class="reference internal image-reference" href="_images/title1.png"><img alt="_images/title1.png" class="align-center" src="_images/title1.png" style="width: 600px; height: 500px;" /></a>
+</div></blockquote>
+<dl class="last docutils">
+<dt>Check the installed docker version using the command:-</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title2.png"><img alt="_images/title2.png" class="align-center" src="_images/title2.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>1.2.Install docker machine</dt>
+<dd><a class="first reference internal image-reference" href="_images/title3.png"><img alt="_images/title3.png" class="align-center" src="_images/title3.png" style="width: 600px; height: 500px;" /></a>
+<dl class="last docutils">
+<dt>Check the installed docker-machine version using the command:-</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title5.png"><img alt="_images/title5.png" class="align-center" src="_images/title5.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</dd>
+<dt>1.3.Install eris</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title6.png"><img alt="_images/title6.png" class="align-center" src="_images/title6.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.4.Initialize eris</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title7.png"><img alt="_images/title7.png" class="align-center" src="_images/title7.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.5.Start eris keys services</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title8.png"><img alt="_images/title8.png" class="align-center" src="_images/title8.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.6.Create chain</dt>
+<dd><ul class="first">
+<li><dl class="first docutils">
+<dt>In the account-types folder, create specific account based toml files to provide specific permissions for various accounts that will be part of the chain.</dt>
+<dd><dl class="first last docutils">
+<dt>Eg.toml file to be placed in this folder is as follows:</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title9.png"><img alt="_images/title9.png" class="align-center" src="_images/title9.png" style="width: 200px; height: 100px;" /></a>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt>In the chain-types folder, create the &lt;&lt; chain name toml file&gt;&gt;. This file contains the chain specific configuration of accounts that are created via the toml files in the account-types folder.</dt>
+<dd><dl class="first last docutils">
+<dt>Eg.toml file to be placed in this folder is as follows:</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title11.png"><img alt="_images/title11.png" class="align-center" src="_images/title11.png" style="width: 100px; height: 50px;" /></a>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<ul class="last">
+<li><dl class="first docutils">
+<dt>To create the chain execute the following command</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title12.png"><img alt="_images/title12.png" class="align-center" src="_images/title12.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>1.7.Add seeds in config.toml</dt>
+<dd><blockquote class="first">
+<div><a class="reference internal image-reference" href="_images/title13.png"><img alt="_images/title13.png" class="align-center" src="_images/title13.png" style="width: 600px; height: 500px;" /></a>
+</div></blockquote>
+<dl class="last docutils">
+<dt>Update seed sections</dt>
+<dd><blockquote class="first">
+<div><p><strong>&lt;&lt;ROOT_NODE_IP&gt;&gt;</strong>  - Root server and port no. 46656</p>
+<dl class="docutils">
+<dt><strong>&lt;&lt;VALIDATOR_NODE_n_IP&gt;&gt;</strong>  - Validator server and port no. 46656</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title16.png"><img alt="_images/title16.png" class="align-center" src="_images/title16.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</div></blockquote>
+<p class="last">Update all the config.toml files under &lt;&lt;chain name&gt;&gt; subfolder.</p>
+</dd>
+</dl>
+</dd>
+<dt>1.8.Start chain</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title17.png"><img alt="_images/title17.png" class="align-center" src="_images/title17.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.9.List all eris keys</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title18.png"><img alt="_images/title18.png" class="align-center" src="_images/title18.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.10.Export Eris Keys</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title19.png"><img alt="_images/title19.png" class="align-center" src="_images/title19.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.11.Check folder created under data</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title20.png"><img alt="_images/title20.png" class="align-center" src="_images/title20.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.12.Create docker instances on validator nodes</dt>
+<dd><blockquote class="first">
+<div><a class="reference internal image-reference" href="_images/title21.png"><img alt="_images/title21.png" class="align-center" src="_images/title21.png" style="width: 600px; height: 500px;" /></a>
+</div></blockquote>
+<dl class="last docutils">
+<dt>** Note: ** Before running the above commands, make sure that the access is available to the remote machine. To provide access, the following commands can be used:</dt>
+<dd>eval <cite>ssh-agent -s</cite>
+ssh-add &lt;&lt;/path/to/your/.pem/file&gt;&gt;</dd>
+</dl>
+</dd>
+<dt>1.13.Creating chain in validator nodes</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title22.png"><img alt="_images/title22.png" class="align-center" src="_images/title22.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.14.Check logs for error checking</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title.png"><img alt="_images/title.png" class="align-center" src="_images/title.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>1.15.Check genesis_hash and latest_block_height in browser</dt>
+<dd><dl class="first docutils">
+<dt>Open the URLs in the browser for all the nodes against port 46657</dt>
+<dd>E.g.: <a class="reference external" href="http://ec2-52-38-66-43.us-west-2.compute.amazonaws.com:46657/">http://ec2-52-38-66-43.us-west-2.compute.amazonaws.com:46657/</a></dd>
+<dt>Go to status link and check genesis hash whether it is same for all nodes.</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title23.png"><img alt="_images/title23.png" class="align-center" src="_images/title23.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>Go to net_info link and check whether the other nodes are visible in the peers section.</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title25.png"><img alt="_images/title25.png" class="align-center" src="_images/title25.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+<p class="last">If both the above conditions are met, Eris clustering is successful. Congratulations!</p>
+</dd>
+<dt>1.16.In case of any error?</dt>
+<dd><dl class="first docutils">
+<dt>Restart Eris keys service by the following commands:</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title26.png"><img alt="_images/title26.png" class="align-center" src="_images/title26.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+<p>If the problem still persists, please follow the below steps:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Unmount docker images from validator nodes</li>
+<li>Uninstall docker-engine from validator nodes</li>
+<li>Stop the chain &amp; eris keys service</li>
+<li>Remove the chain directory</li>
+<li>Start from chain creation</li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="contract-deployment">
+<h1>2.Contract Deployment<a class="headerlink" href="#contract-deployment" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Let&#8217;s now deploy a contract in Eris, after clustering has been implemented successfully.</div></blockquote>
+<ul>
+<li><p class="first">Setup the following environment variables.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/title27.png"><img alt="_images/title27.png" class="align-center" src="_images/title27.png" style="width: 600px; height: 500px;" /></a>
+</div></blockquote>
+</li>
+<li><dl class="first docutils">
+<dt>Navigate to /home/ubuntu/.eris/apps</dt>
+<dd><dl class="first last docutils">
+<dt>Create a directory for contract.</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title28.png"><img alt="_images/title28.png" class="align-center" src="_images/title28.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+<dt>Now you&#8217;ll make a file in this directory. Let&#8217;s assume that is called idi.sol and has the following contents</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title29.png"><img alt="_images/title29.png" class="align-center" src="_images/title29.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</dd>
+<dt>Next we need to make an epm.yaml and make it look something like this:</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title30.png"><img alt="_images/title30.png" class="align-center" src="_images/title30.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Deploy the contract</dt>
+<dd><blockquote class="first">
+<div><dl class="docutils">
+<dt>Use the following command.</dt>
+<dd><a class="first last reference internal image-reference" href="_images/title31.png"><img alt="_images/title31.png" class="align-center" src="_images/title31.png" style="width: 600px; height: 500px;" /></a>
+</dd>
+</dl>
+</div></blockquote>
+<p class="last">If the deployment is successful, jobs_output.json file and folder abi will be created in the same location.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="references">
+<h1>3.References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt>Getting started with Eris</dt>
+<dd><a class="reference external" href="https://monax.io/docs/tutorials/getting-started/">https://monax.io/docs/tutorials/getting-started/</a></dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Making an advanced Eris blockchain</dt>
+<dd><a class="reference external" href="https://monax.io/docs/documentation/cm/latest/examples/chain-making/">https://monax.io/docs/documentation/cm/latest/examples/chain-making/</a></dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Getting familiar with Docker</dt>
+<dd><a class="reference external" href="https://docs.docker.com/machine/get-started/#create-a-machine">https://docs.docker.com/machine/get-started/#create-a-machine</a></dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Radhai Revathi.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
+
